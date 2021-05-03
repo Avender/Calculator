@@ -13,7 +13,9 @@ public class MainActivity extends AppCompatActivity {
 
     double num1, num2;
 
-    boolean Add, Multiply, Divide, Minus, ac, deci;
+    boolean Add, Multiply, Divide, Minus, ac, deci = false;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -153,27 +155,27 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (Add || Minus || Multiply || Divide) {
                     num2 = Float.parseFloat(textView.getText() + "");
-
+                }
                     if (Add) {
                         textView.setText(num1 + num2 + "");
                         Add = false;
                     }
 
                     if (Minus) {
-                        textView.setText(num1 + num2 + "");
+                        textView.setText(num1 - num2 + "");
                         Minus = false;
                     }
 
                     if (Multiply) {
-                        textView.setText(num1 + num2 + "");
+                        textView.setText(num1 * num2 + "");
                         Multiply = false;
                     }
 
                     if (Divide) {
-                        textView.setText(num1 + num2 + "");
+                        textView.setText(num1 / num2 + "");
                         Divide = false;
                     }
-                }
+
             }
         });
     }
