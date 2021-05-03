@@ -148,7 +148,7 @@
         app:layout_constraintStart_toEndOf="@+id/eight" />
 
     <Button
-        android:id="@+id/multiply"
+        android:id="@+id/times"
         android:text="x"
         android:textSize="30sp"
         android:layout_width="103dp"
@@ -169,16 +169,16 @@
 
     <Button
         android:id="@+id/negative"
-        android:text="+/-"
-        android:textSize="30sp"
         android:layout_width="103dp"
         android:layout_height="100dp"
         android:background="@color/grey_100"
+        android:text="+/-"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/eight"
         app:layout_constraintStart_toEndOf="@+id/AC" />
 
     <Button
-        android:id="@+id/percent"
+        android:id="@+id/percentage"
         android:text="%"
         android:textSize="30sp"
         android:layout_width="103dp"
@@ -189,23 +189,39 @@
 
     <Button
         android:id="@+id/divide"
-        android:text="/"
-        android:textSize="30sp"
         android:layout_width="103dp"
         android:layout_height="100dp"
         android:background="@color/grey_100"
-        app:layout_constraintBottom_toTopOf="@+id/multiply"
-        app:layout_constraintStart_toEndOf="@+id/percent" />
+        android:text="/"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/times"
+        app:layout_constraintStart_toEndOf="@+id/percentage" />
 
-    <EditText
-        android:id="@+id/numbers"
-        android:layout_width="408dp"
-        android:layout_height="118dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/percent"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:text="123"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textAlignment="viewEnd"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/negative"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <!--    <EditText-->
+<!--        android:id="@+id/numbers"-->
+<!--        android:layout_width="408dp"-->
+<!--        android:layout_height="118dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="numberDecimal"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/percent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
